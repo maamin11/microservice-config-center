@@ -5,10 +5,16 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/maamin11/springcloud-config
-          search-paths:
+          #git仓库地址
+          uri: https://github.com/maamin11/springcloud-config.git
+          #仓库路径下相对搜索位置，可配置多个
+          search-paths: testfile
+          #git用户名
           username:
+          #git密码
           password:
+      #分支名
       label: master
 server:
   port: 8769
+spring.cloud.config
